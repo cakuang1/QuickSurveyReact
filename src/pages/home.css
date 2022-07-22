@@ -1,12 +1,15 @@
-h1 {
-    
-
+.hometitle {
+    color: white;
+    font-size: 100px;
+    text-align: center;
 
 }
 
 
 ol {
-    font-size: large;
+    font-size: 40px;
+    margin-left: 47.5%;
+
 
 
 
