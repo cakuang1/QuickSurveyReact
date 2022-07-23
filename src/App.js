@@ -1,8 +1,8 @@
-import Create from './pages/create'
-import Home from './pages/home'
-import CreatedSurveys from './pages/pastsurveys'
+import Create from './pages/create/create'
+import Home from './pages/home/home'
+import CreatedSurveys from './pages/pastsurveys/pastsurveys'
 import Nav from './components/Nav/Nav';
-import Login from "./pages/login"
+import Login from "./pages/login/login"
 
 import {BrowserRouter,Route,Routes} from "react-router-dom";
 
@@ -14,9 +14,6 @@ function App() {
   return (
   <BrowserRouter>
     <Nav/>
-
-
-
     <Routes>
       <Route path='/' element = {<Home/>}></Route>
       <Route path = 'create' element = {<Create/>}></Route>
