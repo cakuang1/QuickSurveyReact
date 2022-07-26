@@ -1,22 +1,7 @@
-import React from'react'
-import Question from './question'
-import './create.css'
+import React from 'react'
 
-
-
-export default function Create() {
-
-return (
-  <div classname = 'qcontainer'>
-    <form>
-    <div className='qtitlecontainer'>
-      <input className='qtitle' placeholder='Survey Name'></input>
-    </div>
-    <Question/>
-    </form>
-  </div> 
-
+export default function Create(){
+  return (
+    <div>H</div>
   )
 }
-
-
