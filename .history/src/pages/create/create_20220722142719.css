@@ -1,0 +1,34 @@
+ .qtitle   {
+    margin: auto;
+    display: block; 
+    background-color: #bde7bd;
+    border-color: white;
+ }
+
+ .questioncontainer {
+   background-color: white;
+   border-radius: 5px;
+   width: 80%;
+
+ }
+ 
+.lcontainer {
+   display: flex;
+   width: 50%;
+   height: %;
+   margin: auto;
+   background-color: aqua;
+}
+
+
+
+ .question {
+   width: 80%;
+
+ }
+
+ .sidebar {
+   background-color: white;
+
+
+ }

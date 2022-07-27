@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cakuang1/QuickSurveyReact.git"
+  },
+  "author": "Cary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cakuang1/QuickSurveyReact/issues"
+  },
+  "homepage": "https://github.com/cakuang1/QuickSurveyReact#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.7",
+    "nodemon": "^2.0.19"
+  }
+}

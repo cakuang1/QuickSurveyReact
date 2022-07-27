@@ -1,0 +1,17 @@
+.box {
+width: 40vw;
+min-width: 700px;
+min-height: 480px;
+border-radius: 10px;
+background-color: #fff;
+box-shadow: #6a839c33 0 8px 24px;
+margin: 50px 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+body {
+
+    background-color: #f2fafe;
+}

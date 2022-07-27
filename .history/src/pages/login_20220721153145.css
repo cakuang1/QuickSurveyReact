@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+
+.lrcontainer {
+    display: flex;
+}
+
+.logincontainer {
+    width: 50%;
+    height: 100%;
+
+}
+
+.loginform {
+    background-color: white;
+    margin: 180px 150px 0px 100px;
+    height: 300px;
+    border-radius: 25px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.logintitle {
+    text-align: center;
+
+
+}
+
+.registercontainer {
+    width:50%
+}
+
+input[type="text"],
+input[type="password"] {
+    border-radius: 25px;
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  display: block;
+}
+input[type="submit"] {
+    border-radius: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    background: #01d28e;
+    border: 1px solid #01d28e;
+    color: #fff;
+    padding: 10px 20px;
+    width: 80%;
+    margin: auto;
+    display: block;
+  }
+
+
+  .inputcontainer {
+    
+
+
+  }
+
+
+

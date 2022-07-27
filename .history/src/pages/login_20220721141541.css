@@ -1,0 +1,26 @@
+.lrcontainer {
+    display: flex;
+}
+
+.logincontainer {
+    width: 50%;
+    height: 100%;
+
+}
+
+.loginform {
+    background-color: white;
+    margin: 180px 150px 0px 100px;
+    height: 300px;
+    border-radius: 25px;
+
+}
+
+
+.registercontainer {
+    width:50%
+}
+
+
+
+

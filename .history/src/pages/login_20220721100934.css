@@ -1,0 +1,18 @@
+.lrcontainer {
+    display: flex;
+}
+
+.logincontainer {
+    width: 50%;
+    height: 100;
+
+}
+
+
+.registercontainer {
+    width:50%
+}
+
+
+
+
