@@ -1,0 +1,99 @@
+.box {
+width: 40vw;
+min-width: 700px;
+min-height: 480px;
+border-radius: 10px;
+background-color: #fff;
+box-shadow: #6a839c33 0 8px 24px;
+margin: 50px 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.box2 {
+
+    width: 40vw;
+    min-width: 700px;
+    min-height: 480px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: #6a839c33 0 8px 24px;
+    margin: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+
+
+
+}
+
+.description {
+    margin-top: 20px;
+    font-size: larger;
+
+}
+body {
+
+    background-color: #ecffec;
+}
+
+.test {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .2s;
+}
+
+.loginform {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 50px;
+}
+
+.loginform input {
+    margin-bottom: 40px;
+    padding: 18px 18px 18px 40px;
+    font-family: GilroyRegular;
+    border: 1px solid #c2f3c2;
+    border-radius: 8px;
+    color: var(--blue);
+}
+
+.loginform button {
+    outline: none;
+    border: none;
+    padding: 17px;
+    border-radius: 8px;
+    font-family: GilroyRegular;
+
+    background-color: #c2f3c2;
+    transition: .2s;
+    font-size: 100%;
+
+
+}
+
+
+
+.messages {
+    list-style: none;
+    list-style-position:inside;
+    border: 1px solid black;
+    background-color: rgb(220, 83, 83);
+
+
+
+
+
+
+}
+
+.messagecontainer {
+    margin-top: 20px;
+}

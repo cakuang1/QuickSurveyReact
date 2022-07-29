@@ -8,7 +8,7 @@ const axios = require('axios')
 
 
 export default function newuser(email,password) {
-
+    console.log()
     axios.post('http://localhost:3000/users', {
         email: email,
         password: password
