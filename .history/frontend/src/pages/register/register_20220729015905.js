@@ -20,13 +20,7 @@ export default function Register() {
         e.preventDefault()
         axios.post(server,inputs).then(res => {
             setMessages(res.data)
-            if (res.status == 201) {
-                console.log('hello')
-                setColor("#c2f3c2")
-            }
-            else {
-                setColor("#f5ebeb")
-            }
+            if res.status == 201
     })
 
     }
@@ -48,7 +42,7 @@ export default function Register() {
                     <button type = "submit"> Sign in</button>
                 </form>
                 <div className='messagecontainer'>
-                    {messages.map(message => <div className='messages' style= {{backgroundColor : color}}>{message.msg}</div>)}
+                    {messages.map(message => <div className='messages' style= {{color : '#f5ebeb'}}>{message.msg}</div>)}
                 </div>
             </div>
             <div>

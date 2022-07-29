@@ -42,7 +42,7 @@ router.post("/newuser", async (req, res) => {
 			date : Date.now()
 		})
 		await user.save()
-		res.status(201).send([{msg: `Welcome ${firstname}, your accounts has been created`}])
+		res.send([{msg: `Welcome ${firstname}, your accounts has been created`}])
 	}
 })
 

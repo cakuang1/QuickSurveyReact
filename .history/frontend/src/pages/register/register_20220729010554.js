@@ -1,7 +1,7 @@
 
 import React,{useState} from 'react'
 import axios from 'axios'
-import '../login/login.css'
+
 const server = 'http://localhost:3001/users/newuser'
 
 
@@ -10,7 +10,6 @@ const server = 'http://localhost:3001/users/newuser'
 export default function Register() {
     const [inputs, setInputs] = useState({});
     const [messages,setMessages] = useState([])
-    const [color,setColor] = useState("")
     function handleChange(event) {
         const name = event.target.name;
         const value = event.target.value;
@@ -19,14 +18,15 @@ export default function Register() {
     async function handleSubmit(e) {
         e.preventDefault()
         axios.post(server,inputs).then(res => {
+        if (res.data.length != 0) {
+            console.log(res.data)
             setMessages(res.data)
-            if (res.status == 201) {
-                console.log('hello')
-                setColor("#c2f3c2")
-            }
-            else {
-                setColor("#f5ebeb")
-            }
+        }
+        else {
+
+            
+        }
+        console.log(messages)
     })
 
     }
@@ -48,7 +48,7 @@ export default function Register() {
                     <button type = "submit"> Sign in</button>
                 </form>
                 <div className='messagecontainer'>
-                    {messages.map(message => <div className='messages' style= {{backgroundColor : color}}>{message.msg}</div>)}
+                    {(messages.length != 0)? messages.map(message => <div className='messages'>{message.msg}</div>) : 'nothing'}
                 </div>
             </div>
             <div>

@@ -25,7 +25,7 @@ export default function Register() {
                 setColor("#c2f3c2")
             }
             else {
-                setColor("#f5ebeb")
+                setColor(#f5ebeb"
             }
     })
 
@@ -48,7 +48,7 @@ export default function Register() {
                     <button type = "submit"> Sign in</button>
                 </form>
                 <div className='messagecontainer'>
-                    {messages.map(message => <div className='messages' style= {{backgroundColor : color}}>{message.msg}</div>)}
+                    {messages.map(message => <div className='messages' style= {{color : color}}>{message.msg}</div>)}
                 </div>
             </div>
             <div>

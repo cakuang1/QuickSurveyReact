@@ -48,7 +48,7 @@ export default function Register() {
                     <button type = "submit"> Sign in</button>
                 </form>
                 <div className='messagecontainer'>
-                    {messages.map(message => <div className='messages' style= {{backgroundColor : color}}>{message.msg}</div>)}
+                    {messages.map(message => <div className='messages' style= {{backgrou : color}}>{message.msg}</div>)}
                 </div>
             </div>
             <div>

@@ -82,15 +82,15 @@ body {
 
 
 .messages {
+    background-color: rgb(245, 235, 235);
 
     width: 80%;
-    height: 50px;
+    height: 30px;
     margin: auto;
     text-align: center;
     font-size: 17px;
     font-weight: bold;
-    vertical-align: middle;
-    line-height: 50px;
+
 }
 .messagecontainer {
     width: 100%;
