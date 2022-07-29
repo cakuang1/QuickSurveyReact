@@ -2,22 +2,23 @@ import React, { useState } from 'react'
 import Form from 'react-bootstrap/Form';
 import "./create.css"
 
+function SelectBasicExample() {
+  return (
+    <Form.Select aria-label="Default select example">
+      <option value="1">Multiple Choice</option>
 
+    </Form.Select>
+  );
+}
 function Question() {
-
-
   return (
   <div className='questioncontainer'>
 
-    <input placeholder='Question' className='question'/>
-    <select className='selector'>
-      <option value={1}>Multiple Choice</option>
-    </select>
-    <div className='optioncontainer'>
-      <div>
-        <input className='options'></input>
-      </div>
-    </div>
+    <input placeholder='Question'/>
+    <SelectBasicExample/>
+
+
+
   </div>
   )
 

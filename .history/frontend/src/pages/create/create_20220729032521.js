@@ -1,23 +1,20 @@
 import React, { useState } from 'react'
-import Form from 'react-bootstrap/Form';
 import "./create.css"
 
 
 function Question() {
-
-
   return (
   <div className='questioncontainer'>
 
-    <input placeholder='Question' className='question'/>
-    <select className='selector'>
-      <option value={1}>Multiple Choice</option>
-    </select>
-    <div className='optioncontainer'>
-      <div>
-        <input className='options'></input>
-      </div>
-    </div>
+    <input placeholder='Question'/>
+
+
+
+
+
+
+
+
   </div>
   )
 
@@ -32,7 +29,7 @@ export default function Create(){
     <div className='outsidecontainer'>
       <div className='titlecontainer'>
         <input className='formtitle' value = "Untitled Form" />
-        <input className='formdescription' placeholder='Form Description'/>
+        <input className='formdescription'/>
       </div>
       <Question/>
     </div>

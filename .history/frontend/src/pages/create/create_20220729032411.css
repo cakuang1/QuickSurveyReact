@@ -1,0 +1,23 @@
+.titlecontainer {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+
+}
+
+.outsidecontainer {
+    width: 770px;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+.questioncontainer {
+
+
+
+
+    
+}

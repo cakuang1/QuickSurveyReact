@@ -5,19 +5,19 @@ import "./create.css"
 
 function Question() {
 
-
+  
   return (
   <div className='questioncontainer'>
 
-    <input placeholder='Question' className='question'/>
-    <select className='selector'>
-      <option value={1}>Multiple Choice</option>
+    <input placeholder='Question'/>
+    <select>
+
+
+
     </select>
-    <div className='optioncontainer'>
-      <div>
-        <input className='options'></input>
-      </div>
-    </div>
+
+
+
   </div>
   )
 

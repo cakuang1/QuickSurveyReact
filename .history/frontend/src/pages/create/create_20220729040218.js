@@ -9,8 +9,8 @@ function Question() {
   return (
   <div className='questioncontainer'>
 
-    <input placeholder='Question' className='question'/>
-    <select className='selector'>
+    <input placeholder='Question'/>
+    <select>
       <option value={1}>Multiple Choice</option>
     </select>
     <div className='optioncontainer'>

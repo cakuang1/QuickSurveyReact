@@ -1,0 +1,13 @@
+.titlecontainer {
+    background-color: white;
+    display: flex;
+
+
+}
+
+.outsidecontainer {
+    width: 770px;
+    margin: auto;
+    margin-top: 20px;
+
+}

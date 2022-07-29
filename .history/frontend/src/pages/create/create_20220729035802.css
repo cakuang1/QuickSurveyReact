@@ -8,14 +8,6 @@
 
 }
 
-
-.titlecontainer:hover {
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
-}
-.questioncontainer:hover {
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
-}
-
 .outsidecontainer {
     width: 770px;
     margin: auto;

@@ -3,17 +3,8 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    border-radius: 10px;
 
 
-}
-
-
-.titlecontainer:hover {
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
-}
-.questioncontainer:hover {
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 
 .outsidecontainer {
@@ -26,19 +17,11 @@
 .questioncontainer {
     background-color: white;
     margin-top: 15px;
-    padding: 20px;
 
 }
 
 .formtitle {
     font-size: 35px;
-    border: none;
+    bord
 
-}
-
-.formdescription {
-
-    margin-top: 10px;
-    border: none;
-    font-size: 20px;
 }
