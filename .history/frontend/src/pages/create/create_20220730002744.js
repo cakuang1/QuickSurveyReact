@@ -3,18 +3,18 @@ import React, { useState } from 'react'
 import "./create.css"
 
 
-function Question({handleChange}) {
+function Question() {
+
 
   return (
   <div className='questioncontainer'>
-    <input placeholder='Question' className='question'/>
+    <input placeholder='Question' className='question' onChange={handl}/>
     <select className='selector'>
       <option value={1}>Multiple Choice</option>
     </select>
     <div className='optioncontainer'>
       <div>
         <input className='options'></input>
-        <button>Add Choice</button>
       </div>
     </div>
   </div>
@@ -26,24 +26,29 @@ function Question({handleChange}) {
 
 
 export default function Create(){
-  const [form,setForm] = useState({})
-
-
-  const [inputs,setInputs] = useState([<Question key={0} handleChange = {handleChangeQuestion}/>])
+  const [questions,setQuestions] = useState(1)
+  const [inputs,setInputs] = useState([<Question key={0}/>])
   const [active,setActive] = useState(0)
 
   function handleClick(event) {
 
   }
 
+  function handleChangeTitle() {
 
-  function handleChangeQuestion() {
-    let newfield = {...form}
-    setForm = {}
+
+
+
+
   }
 
+  function handleChangeQuestion() {
 
 
+
+
+
+  }
 
   function handleAdd(e) {
       e.preventDefault()

@@ -14,7 +14,7 @@ function Question({handleChange}) {
     <div className='optioncontainer'>
       <div>
         <input className='options'></input>
-        <button>Add Choice</button>
+        <
       </div>
     </div>
   </div>

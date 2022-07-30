@@ -3,7 +3,8 @@ import React, { useState } from 'react'
 import "./create.css"
 
 
-function Question({handleChange}) {
+function Question({active}) {
+
 
   return (
   <div className='questioncontainer'>
@@ -14,7 +15,6 @@ function Question({handleChange}) {
     <div className='optioncontainer'>
       <div>
         <input className='options'></input>
-        <button>Add Choice</button>
       </div>
     </div>
   </div>
@@ -26,28 +26,12 @@ function Question({handleChange}) {
 
 
 export default function Create(){
-  const [form,setForm] = useState({})
-
-
-  const [inputs,setInputs] = useState([<Question key={0} handleChange = {handleChangeQuestion}/>])
+  const [questions,setQuestions] = useState(1)
   const [active,setActive] = useState(0)
+  const [inputs,setInputs] = useState({})
 
   function handleClick(event) {
-
-  }
-
-
-  function handleChangeQuestion() {
-    let newfield = {...form}
-    setForm = {}
-  }
-
-
-
-
-  function handleAdd(e) {
-      e.preventDefault()
-      setInputs(inputs.concat(<Question key={inputs.length}/>));
+    event.target.style.visibility = 'hidden';
   }
 
 
@@ -60,14 +44,9 @@ export default function Create(){
         <input className='formdescription' placeholder='Form Description' name = 'description'/>
       </div>
       <div >
-        {inputs}
-      </div>
-      <div className='addquestioncontainer'>
-        <button className='addquestionbutton' onClick={handleAdd}>
-          Add Question
-        </button>
-      </div>
+        <Question/>
 
+      </div>
       <div className='createsurveybutton'>
         <button className='createbutton'>Create</button>
       </div>

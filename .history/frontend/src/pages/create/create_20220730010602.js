@@ -7,14 +7,13 @@ function Question({handleChange}) {
 
   return (
   <div className='questioncontainer'>
-    <input placeholder='Question' className='question'/>
+    <input placeholder='Question' className='question' onChange={handleChangeQuestion}/>
     <select className='selector'>
       <option value={1}>Multiple Choice</option>
     </select>
     <div className='optioncontainer'>
       <div>
         <input className='options'></input>
-        <button>Add Choice</button>
       </div>
     </div>
   </div>
@@ -27,8 +26,9 @@ function Question({handleChange}) {
 
 export default function Create(){
   const [form,setForm] = useState({})
-
-
+  function handleChangeQuestion() {
+    let newfield = {...form}
+    setForm = {}
   const [inputs,setInputs] = useState([<Question key={0} handleChange = {handleChangeQuestion}/>])
   const [active,setActive] = useState(0)
 
@@ -37,13 +37,11 @@ export default function Create(){
   }
 
 
-  function handleChangeQuestion() {
-    let newfield = {...form}
-    setForm = {}
+
+
+
+
   }
-
-
-
 
   function handleAdd(e) {
       e.preventDefault()

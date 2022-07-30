@@ -1,18 +1,10 @@
-import React,{useState }from 'react'
-import axios from 'axios'
-
-
-
-
+import React,[]from 'react'
 
 export default function CreatedSurveys() {
+
 
 
   return (
     <div className=''></div>
   )
 }
-
-
-
-
