@@ -22,7 +22,6 @@ function Login() {
             if (res.status == 200) {
                 console.log(res.data)
                 window.localStorage.setItem('loggedinuser',JSON.stringify(res.data))
-                
             }
             else {
                 console.log(res.status)
@@ -45,7 +44,7 @@ function Login() {
                     <button type = "submit" > Sign in</button>
                 </form>
                 <div className= 'messagecontainer'>
-                    <div className='messages'>hello</div>
+                    hello
                 </div>
             </div>
 

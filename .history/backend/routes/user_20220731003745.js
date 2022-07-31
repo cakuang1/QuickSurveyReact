@@ -4,7 +4,6 @@ const router = express.Router()
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const { response } = require('express')
-require('dotenv').config()
 
 // middleware that is specific to this router
 router.post("/newuser", async (req, res) => {
@@ -71,13 +70,12 @@ router.post('/login',async(req,res) => {
                 if (data) {
 	
 					const payload = {
-						email:email,
-						id: user._id
+						email:email
+						
+
 					}
 
-					const webtoken = jwt.sign(payload,process.env.SECRET)
-					
-                    return res.status(200).json({ auth: `Bearer ${webtoken}` })
+                    return res.status(200).json({ msg: "Login success" })
                 } else {
                     return res.status(401).json({ msg: "Invalid credencial" })
                 }

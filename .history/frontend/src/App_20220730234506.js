@@ -24,7 +24,7 @@ function App() {
       <Route path='/' element = {<Home/>}></Route>
       <Route path = 'create' element = {<Create/>}></Route>
       <Route path = 'created' element = {<CreatedSurveys/>}></Route>
-      <Route path = 'login' element = {<LogRegi change = {setUser}/>}></Route>
+      <Route path = 'login' element = {<LogRegi change = />}></Route>
       <Route path = 'register' element = {<Register/>}></Route>
     </Routes>
   

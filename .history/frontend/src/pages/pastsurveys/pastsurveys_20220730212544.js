@@ -10,7 +10,15 @@ import axios from 'axios'
 
 
 export default function CreatedSurveys({authentication,user}) {
+  useEffect(() => {
+    axios.get()
 
+
+
+
+  })
+
+  return (
     <div className=''>
 
 
@@ -18,6 +26,7 @@ export default function CreatedSurveys({authentication,user}) {
 
 
     </div>
+  )
 }
 
 

@@ -22,7 +22,6 @@ function Login() {
             if (res.status == 200) {
                 console.log(res.data)
                 window.localStorage.setItem('loggedinuser',JSON.stringify(res.data))
-                
             }
             else {
                 console.log(res.status)
@@ -44,11 +43,10 @@ function Login() {
                     <input id = "password" name = "password" placeholder='Enter your Password' onChange={handleChange} value = {inputs.password || ""}/>
                     <button type = "submit" > Sign in</button>
                 </form>
-                <div className= 'messagecontainer'>
-                    <div className='messages'>hello</div>
-                </div>
             </div>
-
+            <div className='messagecontainer'>
+                    hello
+            </div>
             <div> 
             <p>Dont have an account? <Link to = "/register">Register</Link></p>
 

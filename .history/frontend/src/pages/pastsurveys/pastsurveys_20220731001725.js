@@ -18,6 +18,7 @@ export default function CreatedSurveys({authentication,user}) {
 
 
     </div>
+  )
 }
 
 

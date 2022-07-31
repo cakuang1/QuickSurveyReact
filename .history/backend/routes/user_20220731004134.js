@@ -76,8 +76,8 @@ router.post('/login',async(req,res) => {
 					}
 
 					const webtoken = jwt.sign(payload,process.env.SECRET)
-					
-                    return res.status(200).json({ auth: `Bearer ${webtoken}` })
+
+                    return res.status(200).json({ auth: "Login success" })
                 } else {
                     return res.status(401).json({ msg: "Invalid credencial" })
                 }
